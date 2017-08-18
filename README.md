@@ -36,7 +36,7 @@ const multipleFiles = require('activerules-read-files');
 
 #### callback(*error*, *contents*)
 
-*error*: `Error` if it fails to read at least one of the files, otherwise `null`  
+*error*: `Error` if it fails terribly, otherwise `null`, it does not error on a missing file.
 *contents*: `Array` of `Buffer` or `String` (according to `encoding` option)
 
 The second argument will be an array of file contents. The order of contents follows the order of file paths. 
@@ -58,7 +58,7 @@ multipleFiles(['foo.txt', 'bar.txt'], 'utf8', (err, contents) => {
 });
 ```
 
-If it fails to read at least one of the files, it passes an error to the first argument and doesn't pass any values to the second argument.
+If it fails terribly it passes an error to the first argument and doesn't pass any values to the second argument. It will silent handle missing files withiut throwing an error.
 
 ```javascript
 const multipleFiles = require('activerules-read-files');
