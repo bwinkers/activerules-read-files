@@ -1,4 +1,4 @@
-# read-multiple-files 
+# activerules-read-files 
 
 A [Node](https://nodejs.org/) module to read multiple files asynchronously - MISSING FILES WILL BE IGNORED
 
