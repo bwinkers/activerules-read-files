@@ -3,9 +3,9 @@
 A [Node](https://nodejs.org/) module to read multiple files asynchronously - MISSING FILES WILL BE IGNORED
 
 ```javascript
-const readMultipleFiles = require('activerules-read-files');
+const multipleFiles = require('activerules-read-files');
 
-readMultipleFiles(['one.txt', 'another.txt'], (err, bufs) => {
+multipleFiles(['one.txt', 'another.txt'], (err, bufs) => {
   if (err) {
     throw err;
   }
@@ -25,10 +25,10 @@ npm install activerules-read-files
 ## API
 
 ```javascript
-const readMultipleFiles = require('activerules-read-files');
+const multipleFiles = require('activerules-read-files');
 ```
 
-### readMultipleFiles(*paths* [, *options*], *callback*)
+### multipleFiles(*paths* [, *options*], *callback*)
 
 *paths*: `Array` of `String` (file paths)  
 *options*: `Object` ([fs.readFile] options) or `String` (encoding)  
@@ -61,13 +61,13 @@ readMultipleFiles(['foo.txt', 'bar.txt'], 'utf8', (err, contents) => {
 If it fails to read at least one of the files, it passes an error to the first argument and doesn't pass any values to the second argument.
 
 ```javascript
-const readMultipleFiles = require('read-multiple-files');
+const multipleFiles = require('activerules-read-files');
 
 // foo.txt: exists
 // bar.txt: doesn't exist
 // baz.txt: exists
 
-readMultipleFiles(['foo.txt', 'bar.txt', 'baz.txt'], (err, contents) => {
+multipleFiles(['foo.txt', 'bar.txt', 'baz.txt'], (err, contents) => {
   err.code; //=> 'ENOENT'
   contents; //=> undefined
   arguments.length; //=> 1
