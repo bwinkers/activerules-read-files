@@ -3,7 +3,7 @@
 A [Node](https://nodejs.org/) module to read multiple files asynchronously - MISSING FILES WILL BE IGNORED
 
 ```javascript
-const readMultipleFiles = require('read-multiple-files');
+const readMultipleFiles = require('activerules-read-files');
 
 readMultipleFiles(['one.txt', 'another.txt'], (err, bufs) => {
   if (err) {
@@ -19,7 +19,7 @@ readMultipleFiles(['one.txt', 'another.txt'], (err, bufs) => {
 [Use npm.](https://docs.npmjs.com/cli/install)
 
 ```
-npm install read-multiple-files
+npm install activerules-read-files
 ```
 
 ## API
@@ -76,7 +76,7 @@ readMultipleFiles(['foo.txt', 'bar.txt', 'baz.txt'], (err, contents) => {
 
 ## Related project
 
-* [read-files-promise](https://github.com/bwinkers/read-files-promise) ([Promises/A+](https://promisesaplus.com/) version)
+* [activerules-read-files-promise](https://github.com/bwinkers/activerules-read-files-promise) ([Promises/A+](https://promisesaplus.com/) version)
 
 ## License
 
