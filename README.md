@@ -44,12 +44,12 @@ The second argument will be an array of file contents. The order of contents fol
 It automatically strips [UTF-8 byte order mark](https://en.wikipedia.org/wiki/Byte_order_mark#UTF-8) from results.
 
 ```javascript
-const readMultipleFiles = require('read-multiple-files');
+const multipleFiles = require('activerules-read-files');
 
 // foo.txt: Hello
 // bar.txt: World
 
-readMultipleFiles(['foo.txt', 'bar.txt'], 'utf8', (err, contents) => {
+multipleFiles(['foo.txt', 'bar.txt'], 'utf8', (err, contents) => {
   if (err) {
     throw err;
   }
