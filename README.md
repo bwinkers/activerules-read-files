@@ -25,7 +25,7 @@ npm install activerules-read-files
 ## API
 
 ```javascript
-const readMultipleFiles = require('read-multiple-files');
+const readMultipleFiles = require('activerules-read-files');
 ```
 
 ### readMultipleFiles(*paths* [, *options*], *callback*)
