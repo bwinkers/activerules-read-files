@@ -1,6 +1,6 @@
 {
   "name": "activerules-read-files",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Read multiple files asynchronously, no errors",
   "repository": "bwinkers/activerules-read-files",
   "author": "Brian Winkers (https://github.com/bwinkers)",

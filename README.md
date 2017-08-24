@@ -1,5 +1,13 @@
 # activerules-read-files 
 
+[![NPM version](https://img.shields.io/npm/v/activerules-read-files.svg)](https://www.npmjs.com/package/activerules-read-files)
+[![Build Status](https://travis-ci.org/bwinkers/activerules-read-files.svg?branch=master)](https://travis-ci.org/bwinkers/activerules-read-files)
+[![Code Climate](https://codeclimate.com/github/bwinkers/activerules-read-files/badges/gpa.svg)](https://codeclimate.com/github/bwinkers/activerules-read-files)
+[![Coverage Status](https://img.shields.io/coveralls/bwinkers/activerules-read-files.svg)](https://coveralls.io/github/bwinkers/activerules-read-files)
+[![Dependency Status](https://img.shields.io/david/bwinkers/activerules-read-files.svg?label=deps)](https://david-dm.org/bwinkers/activerules-read-files)
+[![devDependency Status](https://img.shields.io/david/dev/bwinkers/activerules-read-files.svg?label=devDeps)](https://david-dm.org/bwinkers/activerules-read-files#info=devDependencies)
+
+
 A [Node](https://nodejs.org/) module to read multiple files asynchronously - MISSING FILES WILL BE IGNORED
 
 ```javascript
