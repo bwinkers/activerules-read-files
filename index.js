@@ -1,6 +1,6 @@
 /*!
- * read-multiple-files | MIT (c) Shinnosuke Watanabe
- * https://github.com/shinnn/read-multiple-files
+ * ACTIVERULES-read-files | MIT (c) Brian Winkers
+ * https://github.com/bwinkers/activerules-read-files
 */
 'use strict';
 
