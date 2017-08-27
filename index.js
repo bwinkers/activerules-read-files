@@ -5,7 +5,7 @@
 'use strict';
 
 const fs = require('graceful-fs');
-const runParalell = require('run-parallel');
+const runParalell = require('activerules-run-parallel');
 const stripBom = require('strip-bom');
 
 module.exports = function readMultipleFiles(filePaths, options, cb) {

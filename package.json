@@ -1,6 +1,6 @@
 {
   "name": "activerules-read-files",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Read multiple files asynchronously, no errors",
   "repository": "bwinkers/activerules-read-files",
   "author": "Brian Winkers (https://github.com/bwinkers)",
@@ -21,8 +21,8 @@
     "node"
   ],
   "dependencies": {
+    "activerules-run-parallel": "^1.0.0",
     "graceful-fs": "^4.1.2",
-    "run-parallel": "^1.1.2",
     "strip-bom": "^2.0.0"
   },
   "devDependencies": {
