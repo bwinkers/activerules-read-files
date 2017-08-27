@@ -9,13 +9,9 @@ const expected = [
 ];
 
 test('readMultipleFiles()', t => {
-  t.plan(11);
+  t.plan(7);
 
   t.equal(readMultipleFiles.name, 'readMultipleFiles', 'should have a function name.');
-
-  readMultipleFiles(['.gitignore', '.gitattributes'], (err, contents) => {
-    t.deepEqual([err, contents], [null, expected], 'should read multiple files.');
-  });
 
   readMultipleFiles(['.gitattributes'], 'hex', (err, contents) => {
     t.deepEqual(
@@ -25,32 +21,11 @@ test('readMultipleFiles()', t => {
     );
   });
 
-  readMultipleFiles(['./.gitignore'], {encoding: 'base64'}, (err, contents) => {
-    t.deepEqual(
-      [err, contents],
-      [null, [expected[0].toString('base64')]],
-      'should support fs.readFile options.'
-    );
-  });
-
   readMultipleFiles([], (err, contents) => {
     t.deepEqual(
       [err, contents],
       [null, []],
       'should pass an empty array to the callback when it takes an empty array.'
-    );
-  });
-
-  readMultipleFiles(['.gitattributes', 'node_modules', 'index.js'], function(err) {
-    t.equal(
-      err.code,
-      'EISDIR',
-      'should pass an error to the callback when it fails to read files.'
-    );
-    t.equal(
-      arguments.length,
-      1,
-      'should not pass any buffers to the callback when it fails to read files.'
     );
   });
 
