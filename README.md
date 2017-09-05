@@ -8,7 +8,9 @@
 [![devDependency Status](https://img.shields.io/david/dev/bwinkers/activerules-read-files.svg?label=devDeps)](https://david-dm.org/bwinkers/activerules-read-files#info=devDependencies)
 
 
-A [Node](https://nodejs.org/) module to read multiple files asynchronously - MISSING FILES WILL BE IGNORED
+A [Node](https://nodejs.org/) module to read multiple files asynchronously.
+MISSING FILES WILL BE IGNORED without error.
+
 
 ```javascript
 const multipleFiles = require('activerules-read-files');
