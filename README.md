@@ -6,6 +6,7 @@
 [![Coverage Status](https://img.shields.io/coveralls/bwinkers/activerules-read-files.svg)](https://coveralls.io/github/bwinkers/activerules-read-files)
 [![Dependency Status](https://img.shields.io/david/bwinkers/activerules-read-files.svg?label=deps)](https://david-dm.org/bwinkers/activerules-read-files)
 [![devDependency Status](https://img.shields.io/david/dev/bwinkers/activerules-read-files.svg?label=devDeps)](https://david-dm.org/bwinkers/activerules-read-files#info=devDependencies)
+[![Known Vulnerabilities](https://snyk.io/test/github/bwinkers/activerules-read-files/badge.svg)](https://snyk.io/test/github/bwinkers/activerules-read-files)
 
 
 A [Node](https://nodejs.org/) module to read multiple files asynchronously.
